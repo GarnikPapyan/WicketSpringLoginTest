@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+  <meta charset="utf-8" />
+  <title>Apache Wicket Quickstart</title>
+
+
+</head>
+<body>
+
+<form wicket:id="loginForm"  method="post" action="/process-login">
+  <div>Username</div>
+  <div >
+    <input wicket:id= "username"  type="text" name="username" placeholder="username" >
+  </div>
+  <br>
+  <div>Password</div>
+  <div >
+    <input  wicket:id= "password" type="password" name="password" placeholder="Password" autocomplete="none">
+  </div>
+  <br>
+  <div>
+    <input type="submit" value="Sign In" >
+    <input type="reset" value="Reset" >
+  </div>
+</form>
+<span wicket:id = "feedback"/>
+
+</body>
+</html>
